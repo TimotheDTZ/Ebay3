@@ -1,0 +1,46 @@
+/* Pagination styles */
+
+/* Default state */
+.pagination {
+    /* Styles for default state */
+}
+
+/* Hover state */
+.pagination:hover {
+    /* Styles for hover state */
+}
+
+/* Focus state */
+.pagination:focus {
+    /* Styles for focus state */
+}
+
+/* Disabled state */
+.pagination.disabled {
+    /* Styles for disabled state */
+}
+
+/* Default state for countButton */
+.pagination .countButton {
+    /* Styles for default state of countButton */
+}
+
+/* Active state for countButton */
+.pagination .countButton.active {
+    /* Styles for active state of countButton */
+}
+
+/* Hover state for countButton */
+.pagination .countButton:hover {
+    /* Styles for hover state of countButton */
+}
+
+/* Focus state for countButton */
+.pagination .countButton:focus {
+    /* Styles for focus state of countButton */
+}
+
+/* Disabled state for countButton */
+.pagination .countButton.disabled {
+    /* Styles for disabled state of countButton */
+}
