@@ -1,2 +1,488 @@
 /* ConfirmationDialog.css */
 /* Ajoutez ici les styles CSS nécessaires pour votre composant ConfirmationDialog */
+@import url(../../Token/ebay1/colors.css);
+@import url(../../Token/ebay1/typescale.css);
+
+.confirmation-dialog {
+    background-color: var(--rebirth-overlay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rebirth-surface);
+}
+
+.dialog-actions {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*********************************************/
+.dialog-background_sm8pxmargin {
+    width: 344px;
+    height: 289px;
+}
+
+.dialog-background_sm16pxmargin {
+    padding: 16px;
+    width: 328px;
+    height: 289px;
+}
+
+.dialog-background_md {
+    width: 356px;
+    height: 269px;
+}
+
+.dialog-background_xl1440 {
+    width: 454px;
+    height: 289px;
+}
+
+.dialog-background_xl1280 {
+    width: 400px;
+    height: 289px;
+}
+
+
+/*********************************************/
+
+.sm16pxmargin {
+    padding: 16px;
+    width: 360px;
+    height: 760px;
+}
+
+.sm8pxmargin {
+    padding: 8px;
+    width: 360px;
+    height: 760px;
+}
+
+.md {
+    width: 768px;
+    height: 560px;
+}
+
+.xl1280 {
+    width: 1280px;
+    height: 560px;
+}
+
+.xl1440 {
+    width: 1440px;
+    height: 560px;
+}
+
+
+/*********************************************/
+
+.link_sm8pxmargin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 296px;
+    text-decoration: underline;
+    align-self: center;
+    font-size: var(--rebirth-font-size-14);
+    margin-top: 3%;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.back_sm8pxmargin_2 {
+    width: 148px;
+    height: 46px;
+
+    align-self: stretch;
+    place-content: center;
+}
+
+.done_sm8pxmargin_2 {
+    width: 148px;
+    height: 46px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.close_sm8pxmargin {
+    color: var(--rebirth-icon);
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 13.38px;
+    height: 13.38px;
+    margin-left: 80%;
+}
+
+.done_sm8pxmargin {
+    width: 296px;
+    height: 46px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.text_sm8pxmargin {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 296px;
+    height: 48px;
+}
+
+.title_sm8pxmargin {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-weight: bold;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 296px;
+    height: 24px;
+}
+
+/*********************************************/
+
+.link_sm16pxmargin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 280px;
+    text-decoration: underline;
+    align-self: center;
+    font-size: var(--rebirth-font-size-14);
+    margin-top: 3%;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.back_sm16pxmargin_2 {
+    width: 148px;
+    height: 46px;
+
+    align-self: stretch;
+    place-content: center;
+}
+
+.done_sm16pxmargin_2 {
+    width: 148px;
+    height: 46px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.close_sm16pxmargin {
+    color: var(--rebirth-icon);
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 13.38px;
+    height: 13.38px;
+    margin-left: 80%;
+}
+
+.done_sm16pxmargin {
+    width: 280px;
+    height: 48px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.text_sm16pxmargin {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 280px;
+    height: 48px;
+}
+
+.title_sm16pxmargin {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-weight: bold;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 24px;
+}
+
+/***********************************************/
+
+.link_md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 296px;
+    text-decoration: underline;
+    align-self: center;
+    font-size: var(--rebirth-font-size-14);
+    margin-top: 3%;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.back_md_2 {
+    width: 148px;
+    height: 46px;
+    align-self: stretch;
+    place-content: center;
+    margin-top: 10%;
+}
+
+.done_md_2 {
+    width: 148px;
+    height: 46px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+    width: 146px;
+    height: 48px;
+    margin-top: 10%;
+}
+
+.close_md {
+    color: var(--rebirth-icon);
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 13.38px;
+    height: 13.38px;
+    margin-left: 80%;
+}
+
+.done_md {
+    width: 308px;
+    height: 48px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+    margin-top: 10%;
+}
+
+.text_md {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 308px;
+    height: 24px;
+}
+
+.title_md {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-weight: bold;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 308px;
+    height: 24px;
+}
+
+/***********************************************/
+
+.link_xl1280 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 296px;
+    text-decoration: underline;
+    align-self: center;
+    font-size: var(--rebirth-font-size-14);
+    margin-top: 3%;
+    line-height: 150%;
+    margin-left: 10%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.back_xl1280_2 {
+    width: 168px;
+    height: 48px;
+    align-self: stretch;
+    place-content: center;
+}
+
+.done_xl1280_2 {
+    width: 168px;
+    height: 48px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.close_xl1280 {
+    color: var(--rebirth-icon);
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 13.38px;
+    height: 13.38px;
+    margin-left: 80%;
+}
+
+.done_xl1280 {
+    width: 296px;
+    height: 46px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+    width: 352px;
+    height: 48px;
+}
+
+.text_xl1280 {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 352px;
+    height: 48px;
+}
+
+.title_xl1280 {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-weight: bold;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 352px;
+    height: 24px;
+}
+
+/***********************************************/
+
+.link_xl1440 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 406px;
+    text-decoration: underline;
+    align-self: center;
+    font-size: var(--rebirth-font-size-14);
+    margin-top: 3%;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.back_xl1440_2 {
+    width: 195px;
+    height: 48px;
+    align-self: stretch;
+    place-content: center;
+}
+
+.done_xl1440_2 {
+    width: 195px;
+    height: 48px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.close_xl1440 {
+    color: var(--rebirth-icon);
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 13.38px;
+    height: 13.38px;
+    margin-left: 80%;
+}
+
+.done_xl1440 {
+    width: 406px;
+    height: 48px;
+    background-color: var(--rebirth-button-primary);
+    color: var(--rebirth-on-button-primary);
+    align-self: stretch;
+    place-content: center;
+}
+
+.text_xl1440 {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 406px;
+    height: 48px;
+}
+
+.title_xl1440 {
+    color: var(--rebirth-on-surface);
+    font-size: var(--rebirth-font-size-16);
+    line-height: 150%;
+    font-weight: bold;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    align-items: center;
+    text-align: center;
+    width: 406px;
+    height: 24px;
+}
