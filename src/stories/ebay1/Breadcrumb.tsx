@@ -19,14 +19,15 @@ export const Breadcrumb = ({
     ...props
 }: BreadcrumbProps) => {
     return (
-        <div className={`breadcrumb ${breakpoints}`} style={{ backgroundColor }}>
+        <div className={`breadcrumb_${breakpoints.replace(' ', '').replace('+', '')} ${backgroundColor}`} >
             {breadcrumbs.map((breadcrumb, index) => (
                 <React.Fragment key={index}>
-                    <span className="breadcrumb-item">{breadcrumb}</span>
-                    {index !== breadcrumbs.length - 1 && <span className="breadcrumb-separator">></span>}
+                    {index !== breadcrumbs.length - 1 && <span className={`breadcrumb-item underline ${backgroundColor}`}>{breadcrumb}</span>}
+                    {index == breadcrumbs.length - 1 && <span className={`breadcrumb-item ${backgroundColor}`}>{breadcrumb}</span>}
+                    {index !== breadcrumbs.length - 1 && <span className={`breadcrumb-separator ${backgroundColor}`}>&gt;</span>}
                 </React.Fragment>
             ))}
-            {showTitle && <h2 className="breadcrumb-title">{title}</h2>}
+            {showTitle && <h2 className={`breadcrumb-title ${backgroundColor}`}>{title}</h2>}
         </div>
     );
 };
