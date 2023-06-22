@@ -1,18 +1,29 @@
 /* Counter styles */
+.counter:disabled {
+    cursor: not-allowed;
+
+}
+
 .counter {
     display: inline-flex;
     align-items: center;
 }
 
 .counter-lg {
+    width: 154px;
+    height: 48px;
     font-size: 24px;
 }
 
 .counter-md {
+    width: 136px;
+    height: 40px;
     font-size: 18px;
 }
 
 .counter-sm {
+    width: 120px;
+    height: 32px;
     font-size: 14px;
 }
 
@@ -31,4 +42,45 @@
 
 .dustbin {
     margin-left: 5px;
+}
+
+/************************************/
+
+.count_md {
+    border: 0.3px solid black;
+    text-align: center;
+    line-height: 40px;
+    width: 56px;
+    height: 40px;
+}
+
+.count_sm {
+    border: 0.3px solid black;
+    text-align: center;
+    line-height: 32px;
+    width: 55px;
+    height: 32px;
+}
+
+.count_lg {
+    border: 0.1px solid black;
+    text-align: center;
+    line-height: 48px;
+    width: 58px;
+    height: 48px;
+}
+
+.button_sm {
+    width: 32px;
+    height: 32px;
+}
+
+.button_md {
+    width: 40px;
+    height: 40px;
+}
+
+.button_lg {
+    width: 48px;
+    height: 48px;
 }

@@ -18,11 +18,6 @@ const meta: Meta<typeof Counter> = {
                 type: 'boolean',
             },
         },
-        disabled: {
-            control: {
-                type: 'boolean',
-            },
-        },
         state: {
             control: {
                 type: 'select',
@@ -45,7 +40,7 @@ export const Default: Story = {
     args: {
         size: 'md',
         dustbin: false,
-        disabled: false,
+
         state: 'default',
         initialValue: 0,
     },
@@ -55,7 +50,7 @@ export const WithDustbin: Story = {
     args: {
         size: 'md',
         dustbin: true,
-        disabled: false,
+
         state: 'default',
         initialValue: 0,
     },
@@ -65,7 +60,6 @@ export const Disabled: Story = {
     args: {
         size: 'md',
         dustbin: false,
-        disabled: true,
         state: 'default',
         initialValue: 0,
     },
