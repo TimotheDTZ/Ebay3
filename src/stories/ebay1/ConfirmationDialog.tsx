@@ -1,6 +1,8 @@
 // ConfirmationDialog.tsx
 import React from 'react';
 import './ConfirmationDialog.css';
+import closeIcon from 'remixicon/icons/System/close-line.svg';
+import Image from "next/image";
 
 export interface ConfirmationDialogProps {
     title: string;
@@ -47,7 +49,7 @@ export const ConfirmationDialog = ({
     return (
         <div className={`confirmation-dialog ${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`} >
             <div className={`dialog-background dialog-background_${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`}>
-                {hasCloseIcon && <div className={`close_${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`}>X</div>}
+                {hasCloseIcon && <div className={`close_${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`}><Image src={closeIcon} alt={'close'} /></div>}
                 <h2 className={`title_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")}`} >{title}</h2>
                 <p className={`text_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")}`}>{text}</p>
                 {renderActions()}
