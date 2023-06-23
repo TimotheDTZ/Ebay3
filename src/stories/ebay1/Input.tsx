@@ -11,7 +11,7 @@ export interface InputProps {
     value?: string;
     helper: boolean;
     helperText?: string;
-    icon: 'none' | 'left' | 'right' | 'button';
+    icon: 'none' | 'left' | 'button' | 'all';
 }
 
 export const Input = ({
@@ -32,14 +32,34 @@ export const Input = ({
             {/*{icon === 'left' && <div>Icon à gauche de l input</div>}*/}
             {/*{icon === 'right' && <div>Bouton à droite de l input</div>}*/}
             {/*{icon === 'button' && <button>Button</button>}*/}
-            <div className="input-container">
+
+            {icon === 'none' && <div className={`input-container-${icon}`}>
                 <input type="text" className="custom-input" placeholder={'text'}/>
+                <div className="input-label"><span>Label</span></div>
+            </div>}
+
+            {icon === 'left' && <div className={`input-container-${icon}`}>
+                <input type="text" className="custom-input" placeholder={'text'}/>
+                <div className="input-label"><span>Label</span></div>
                 <div className="image-container">
                     <Image src={iconInput} alt={''} className="custom-image"/>
                 </div>
+            </div>}
+
+            {icon === 'button' && <div className={`input-container-${icon}`}>
+                <input type="text" className="custom-input" placeholder={'text'}/>
                 <div className="input-label"><span>Label</span></div>
                 <button className="custom-button">Bouton</button>
-            </div>
+            </div>}
+
+            {icon === 'all' && <div className={`input-container-${icon}`}>
+                <input type="text" className="custom-input" placeholder={'text'}/>
+                <div className="input-label"><span>Label</span></div>
+                <div className="image-container">
+                    <Image src={iconInput} alt={''} className="custom-image"/>
+                </div>
+                <button className="custom-button">Bouton</button>
+            </div>}
         </div>
     );
 };

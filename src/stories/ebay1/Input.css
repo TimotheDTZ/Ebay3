@@ -1,18 +1,105 @@
+.input-container-none {
+    position: relative;
+    width: 268px;
+    height: 32px;
+}
 
+.input-container-none .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 24px;
+}
 
-.input-container {
+.input-container-none .input-label {
+    position: absolute;
+    height: 62px;
+    left: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container-left {
+    position: relative;
+    width: 288px;
+    height: 32px;
+}
+
+.input-container-left .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 24px;
+}
+
+.input-container-button {
+    position: relative;
+    width: 268px;
+    height: 32px;
+}
+
+.input-container-button .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 24px;
+}
+
+.input-container-button .input-label {
+    position: absolute;
+    height: 62px;
+    left: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container-button .custom-button {
+    position: absolute;
+    right: -80px;
+    top: 0;
+    width: 82px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.input-container-all {
     position: relative;
     width: 228px;
     height: 32px;
 }
 
-.custom-input {
+.input-container-all .custom-input {
     width: calc(100% - 24px);
     height: 32px;
     padding-left: 60px;
     padding-right: 80px;
     padding-top: 24px;
 }
+
+.input-container-all .custom-button {
+    position: absolute;
+    right: -120px;
+    top: 0;
+    width: 82px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
 .custom-input::placeholder {
     color: transparent;
 }
@@ -36,18 +123,7 @@
     height: 100%;
 }
 
-.custom-button {
-    position: absolute;
-    right: -120px;
-    top: 0;
-    width: 82px;
-    height: 62px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-}
+
 
 .input-label {
     position: absolute;
