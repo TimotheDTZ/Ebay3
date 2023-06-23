@@ -1,4 +1,8 @@
 import React, { ReactNode } from 'react';
+import imageleft from 'remixicon/icons/Media/image-line.svg';
+import imageRight from 'remixicon/icons/Arrows/arrow-right-line.svg';
+import Image from "next/image";
+
 import './LinkRebirth.css';
 
 interface LinkRebirthProps {
@@ -22,9 +26,9 @@ export const LinkRebirth = ({
 
     return (
         <a className={className}>
-            {iconLeft && <span className="icon-left">Icon Left</span>}
+            {iconLeft && <Image src={imageleft} alt='imageleft' className='Image' />}
             {children}
-            {iconRight && <span className="icon-right">Icon Right</span>}
+            {iconRight && <Image src={imageRight} alt='imageRight' className='Image' />}
         </a>
     );
 };

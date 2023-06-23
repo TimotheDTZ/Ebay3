@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { LinkRebirth } from './LinkRebirth';
 
 const meta: Meta<typeof LinkRebirth> = {
-    title: 'Ebay1/LinkRebirth/LinkRebirth',
+    title: 'Ebay1/Link/LinkRebirth',
     component: LinkRebirth,
     tags: ['autodocs'],
     argTypes: {
