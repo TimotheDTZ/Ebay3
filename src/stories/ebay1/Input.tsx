@@ -1,6 +1,8 @@
 // Input.tsx
 import React from 'react';
+import Image from "next/image";
 import './Input.css';
+import iconInput from 'remixicon/icons/Logos/remixicon-line.svg';
 
 export interface InputProps {
     label: string;
@@ -25,11 +27,19 @@ export const Input = ({
 
     return (
         <div>
-            <input className={inputClass} type="text" value={withValue ? value : ''} />
-            {helper && <div>{helperText}</div>}
-            {icon === 'left' && <div>Icon à gauche de l input</div>}
-            {icon === 'right' && <div>Bouton à droite de l input</div>}
-            {icon === 'button' && <button>Button</button>}
+            {/*<input className={'input'} type="text" value={withValue ? value : ''} />*/}
+            {/*{helper && <div>{helperText}</div>}*/}
+            {/*{icon === 'left' && <div>Icon à gauche de l input</div>}*/}
+            {/*{icon === 'right' && <div>Bouton à droite de l input</div>}*/}
+            {/*{icon === 'button' && <button>Button</button>}*/}
+            <div className="input-container">
+                <input type="text" className="custom-input" placeholder={'text'}/>
+                <div className="image-container">
+                    <Image src={iconInput} alt={''} className="custom-image"/>
+                </div>
+                <div className="input-label"><span>Label</span></div>
+                <button className="custom-button">Bouton</button>
+            </div>
         </div>
     );
 };
