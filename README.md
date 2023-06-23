@@ -71,8 +71,9 @@ La structure du projet est organisée de la manière suivante :
 storybook-project/
   ├── .storybook/         # Configuration de Storybook
   ├── src/                # Code source du projet
-  │   ├── components/     # Composants réutilisables
+  │   ├── Core/     # Composants réutilisables
   │   └── stories/        # Histoires des composants
+  │   └── Token/        # Variables réutilisables
   └── package.json        # Informations sur le projet et dépendances
 ```
 

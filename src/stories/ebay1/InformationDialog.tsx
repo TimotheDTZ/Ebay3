@@ -1,18 +1,24 @@
 // InformationDialog.tsx
 import React from 'react';
 import './InformationDialog.css';
+import closeIcon from 'remixicon/icons/System/close-line.svg';
+import informationIcon from 'remixicon/icons/System/information-line.svg';
+import warningIcon from 'remixicon/icons/System/error-warning-line.svg';
+import dangerIcon from 'remixicon/icons/System/spam-line.svg';
+import successIcon from 'remixicon/icons/System/checkbox-circle-line.svg';
+import Image from "next/image";
 
 export interface InformationDialogProps {
     icon: string;
     title: string;
     text: string;
-    breakpoints: 'sm (16px margin)' | 'sm (18px margin)' | 'md, xl 1440' | 'xl 1280';
+    breakpoints: 'sm (16px margin)' | 'sm (8px margin)' | 'md' | 'xl 1440' | 'xl 1280';
     Status: 'Info' | 'Success' | 'Warning' | 'Danger';
     withAction: boolean;
 }
 
 export const InformationDialog = ({
-    icon = "https://cdn1.iconfinder.com/data/icons/feather-2/24/info-16.png",
+    icon = informationIcon,
     title = 'Title',
     text = 'Text',
     breakpoints = 'sm (16px margin)',
@@ -20,45 +26,36 @@ export const InformationDialog = ({
     withAction = true,
 }: InformationDialogProps) => {
     const renderActions = () => {
-        switch (breakpoints) {
-            case 'sm (16px margin)':
+        switch (Status) {
+            case 'Info':
                 return (
-                    <div className="dialog-actions">
-                        <button>Done</button>
-                    </div>
+                    <Image src={informationIcon} className={`img_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")} ${Status}`} alt="icon" />
                 );
-            case 'sm (18px margin)':
+            case 'Success':
                 return (
-                    <div className="dialog-actions">
-                        <button>Back</button>
-                        <button>Done</button>
-                    </div>
+                    <Image src={successIcon} className={`img_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")} ${Status}`} alt="icon" />
                 );
-            case 'xl 1280':
+            case 'Warning':
                 return (
-                    <div className="dialog-actions">
-                        <button>Back</button>
-                        <button>Done</button>
-                    </div>
+                    <Image src={warningIcon} className={`img_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")} ${Status}`} alt="icon" />
                 );
-            case 'md, xl 1440':
+            case 'Danger':
                 return (
-                    <div className="dialog-actions">
-                        <button>Done</button>
-                        <div className="link-label">Link Label</div>
-                    </div>
+                    <Image src={dangerIcon} className={`img_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")} ${Status}`} alt="icon" />
                 );
             default:
                 return null;
         }
     };
-
     return (
-        <div className="confirmation-dialog">
-            <img src={icon} alt="icon" />
-            <h2>{title}</h2>
-            <p>{text}</p>
-            {withAction && <div className="dialog-actions"><button>Done</button></div>}
+        <div className={`confirmation-dialog ${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`} >
+            <div className={`dialog-background dialog-background_${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`}>
+                <div className={`close_${breakpoints.replace(/\s/g, "").replace('(', '').replace(')', '')}`}><Image src={closeIcon} alt={'close'} /></div>
+                {renderActions()}
+                <h2 className={`title_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")}`} >{Status}</h2>
+                <p className={`text_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")}`}>{text}</p>
+                {withAction && <div className="dialog-actions"><button className={`done_${breakpoints.replace(/\s/g, "").replace("(", "").replace(")", "")}`} >Done</button></div>}
+            </div>
         </div>
     );
 };
