@@ -15,10 +15,23 @@
 }
 
 .radio-group label {
-    margin-bottom: 5px;
+    color: #22293a;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    flex-direction: column;
 }
 
 .radio-group.title {
-    margin-bottom: 10px;
-    font-weight: bold;
+    color: #22293a;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    flex-direction: column;
 }
