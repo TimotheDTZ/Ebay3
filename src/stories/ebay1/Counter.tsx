@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Counter.css';
+import binIcon from 'remixicon/icons/System/delete-bin-line.svg';
+import Image from "next/image";
 
 type CounterProps = {
     size?: 'lg' | 'md' | 'sm';
     dustbin?: boolean;
-    disabled?: boolean;
+    // disabled?: boolean;
     state?: 'default' | 'hover' | 'disabled';
     initialValue?: number;
 };
@@ -12,7 +14,7 @@ type CounterProps = {
 export const Counter = ({
     size = 'md',
     dustbin = false,
-    disabled = false,
+    // disabled = false,
     state = 'default',
     initialValue = 0,
     ...props
@@ -55,11 +57,11 @@ export const Counter = ({
     return (
         <div
             className={`counter ${getSizeClass()} ${getStateClass()}`}
-            onClick={disabled ? undefined : handleIncrement}>
-            {(dustbin) && <span className="dustbin">🗑️</span>}
-            {(!dustbin) && <button onClick={disabled ? undefined : handleDecrement}>-</button>}
-            <span>{count}</span>
-            <button onClick={disabled ? undefined : handleIncrement}>+</button>
+            onClick={handleIncrement}>
+            {(dustbin) && <Image className={`count_${size}`} src={binIcon} alt='Bin' />}
+            {(!dustbin) && <button className={`button_${size}`} onClick={handleDecrement}>-</button>}
+            <span className={`count_${size}`}>{count}</span>
+            <button className={`button_${size}`} onClick={handleIncrement}>+</button>
 
         </div>
     );
