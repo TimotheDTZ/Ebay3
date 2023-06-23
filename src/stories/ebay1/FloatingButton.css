@@ -1,4 +1,6 @@
 /* FloatingButton.css */
+@import url(../../Token/ebay1/colors.css);
+
 .FloatingButton {
     /* Styles par défaut du bouton flottant */
     display: flex;
@@ -7,30 +9,39 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-color: #2196f3;
+    background-color: var(--rebirth-button-primary);
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+.FloatingButton.extended {
+    width: 106px;
+    border-radius: 28px;
+}
+
 /* Styles en cas de survol */
-.FloatingButton:hover {
-    background-color: #1976d2;
+.FloatingButton:hover, .Hovered {
+    background-color: var(--rebirth-button-primary-variant);
 }
 
 /* Styles en cas de clic */
 .FloatingButton:active {
-    background-color: #0d47a1;
+    background-color: var(--rebirth-button-primary-variant);
 }
 
 /* Styles en cas de focus */
-.FloatingButton:focus {
-    background-color: #1976d2;
+.FloatingButton:focus, .Focused {
+    background-color: var(--rebirth-button-primary-variant);
     outline: none;
 }
 
 /* Styles en cas de désactivation */
-.FloatingButton:disabled {
-    background-color: #bdbdbd;
+.FloatingButton:disabled, .Disabled {
+    background-color: var(--rebirth-button-primary-variant);
     cursor: not-allowed;
+}
+
+.floating-ico {
+    filter: invert(100%) sepia(5%) saturate(1%) hue-rotate(325deg) brightness(105%) contrast(101%);
 }
