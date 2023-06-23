@@ -15,12 +15,15 @@ export const Pagination = ({
 }: PaginationProps) => {
     return (
         <div className={`pagination ${state}`}>
+            <button className="controlButton countButton">&#60;</button>
             {[1, 2, 3, 4, 5].map((pageNumber) => (
                 <button key={pageNumber} className={`countButton ${countButtonState[pageNumber] || 'default'}`}>
                     {pageNumber}
                 </button>
             ))}
+            <button className="controlButton countButton">&#62;</button>
         </div>
+
     );
 };
 
