@@ -1,0 +1,80 @@
+/* Pagination styles */
+
+/* Default state */
+.pagination {
+    /* Styles for default state */
+}
+
+/* Hover state */
+.pagination:hover {
+    /* Styles for hover state */
+}
+
+/* Focus state */
+.pagination:focus {
+    /* Styles for focus state */
+}
+
+/* Disabled state */
+.pagination.disabled {
+    /* Styles for disabled state */
+}
+
+/* Default state for countButton */
+.pagination .countButton {
+    /* Styles for default state of countButton */
+}
+
+/* Active state for countButton */
+.pagination .countButton.active {
+    /* Styles for active state of countButton */
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    padding: 13px 4px;
+    border-radius: 2px;
+    background-color: #263f59;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding-left: 1.5%;
+}
+
+/* Hover state for countButton */
+.pagination .countButton:hover {
+    /* Styles for hover state of countButton */
+    width: 40px;
+    height: 40px;
+    flex-direction: column;
+    padding: 13px 4px;
+    border-radius: 2px;
+    background-color: #172635;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding-left: 1.5%;
+}
+
+/* Focus state for countButton */
+.pagination .countButton:focus {
+    /* Styles for focus state of countButton */
+}
+
+/* Disabled state for countButton */
+.pagination .countButton.disabled {
+    /* Styles for disabled state of countButton */
+}
+
+.countButton {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    flex-shrink: 0;
+    text-decoration: none;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    width: 40px;
+    height: 40px;
+}

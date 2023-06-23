@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="90f440ef-8735-4fd9-9b71-cd796f37e0ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/ebay1/RatingsRebirth.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ebay1/RatingsRebirth.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/ebay1/RatingsRebirth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ebay1/RatingsRebirth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/ebay1/Input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ebay1/Input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/ebay1/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/ebay1/Input.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ecv/compet/ebay3/src/stories/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ecv/compet/ebay3&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -83,6 +83,8 @@
       <workItem from="1687254741598" duration="7822000" />
       <workItem from="1687269488284" duration="1182000" />
       <workItem from="1687336056450" duration="14007000" />
+      <workItem from="1687508111154" duration="167000" />
+      <workItem from="1687508325432" duration="2717000" />
     </task>
     <servers />
   </component>

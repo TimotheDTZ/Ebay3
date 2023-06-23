@@ -1,28 +1,140 @@
-/* Input.css */
-.input {
-    /* Styles pour l'input par défaut */
+.input-container-none {
+    position: relative;
+    width: 268px;
+    height: 32px;
 }
 
-.input.focus {
-    /* Styles lorsque l'input est en focus */
+.input-container-none .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 24px;
 }
 
-.input.hover {
-    /* Styles lorsque l'input est survolé */
+.input-container-none .input-label {
+    position: absolute;
+    height: 62px;
+    left: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.input.pressed {
-    /* Styles lorsque l'input est enfoncé */
+.input-container-left {
+    position: relative;
+    width: 288px;
+    height: 32px;
 }
 
-.input.valid {
-    /* Styles lorsque l'input est valide */
+.input-container-left .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 24px;
 }
 
-.input.error {
-    /* Styles lorsque l'input est en erreur */
+.input-container-button {
+    position: relative;
+    width: 268px;
+    height: 32px;
 }
 
-.input.disabled {
-    /* Styles lorsque l'input est désactivé */
+.input-container-button .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 24px;
+}
+
+.input-container-button .input-label {
+    position: absolute;
+    height: 62px;
+    left: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container-button .custom-button {
+    position: absolute;
+    right: -80px;
+    top: 0;
+    width: 82px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.input-container-all {
+    position: relative;
+    width: 228px;
+    height: 32px;
+}
+
+.input-container-all .custom-input {
+    width: calc(100% - 24px);
+    height: 32px;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-top: 24px;
+}
+
+.input-container-all .custom-button {
+    position: absolute;
+    right: -120px;
+    top: 0;
+    width: 82px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.custom-input::placeholder {
+    color: transparent;
+}
+
+.custom-input:focus + .input-label {
+    font-size: 14px;
+    height: 30px;
+}
+
+
+.image-container {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+}
+
+.custom-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.input-label {
+    position: absolute;
+    height: 62px;
+    left: 60px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-label span {
+    text-align: center;
 }

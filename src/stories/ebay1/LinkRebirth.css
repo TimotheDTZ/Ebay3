@@ -1,5 +1,17 @@
 .link-rebirth {
     /* Styles par défaut */
+    color: #316fca;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    text-decoration: underline;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .link-rebirth.primary {
@@ -32,4 +44,8 @@
 
 .link-rebirth .icon-right {
     /* Styles pour l'icône à droite */
+}
+
+.Image {
+    filter: invert(37%) sepia(43%) saturate(1712%) hue-rotate(189deg) brightness(93%) contrast(86%);
 }
