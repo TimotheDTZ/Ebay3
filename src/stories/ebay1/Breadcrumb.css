@@ -1,2 +1,73 @@
 /* Breadcrumb.css */
 /* Ajoutez ici les styles CSS pour le composant Breadcrumb */
+@import url(../../Token/ebay1/colors.css);
+@import url(../../Token/ebay1/typescale.css);
+
+.underline {
+    text-decoration: underline;
+}
+
+.breadcrumb-item {
+    color: var(--rebirth-link-secondary);
+    line-height: 150%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: Paysage, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.breadcrumb-title {
+    color: var(--rebirth-link-primary);
+
+    line-height: 150%;
+    font-family: Butler, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+/***************************************************/
+
+.breadcrumb_lg .breadcrumb-title {
+    font-size: var(--rebirth-font-size-37);
+}
+
+.breadcrumb_smtomd .breadcrumb-title {
+    font-size: var(--rebirth-font-size-28);
+}
+
+.breadcrumb_lg .breadcrumb-item {
+    font-size: var(--rebirth-font-size-16);
+}
+
+.breadcrumb_smtomd .breadcrumb-item {
+    font-size: var(--rebirth-font-size-14);
+}
+
+/***************************************************/
+
+.breadcrumb_lg {
+    width: 991px;
+    height: auto;
+
+}
+
+.breadcrumb_smtomd {
+    width: 320px;
+    height: auto;
+
+}
+
+/***************************************************/
+
+.G000 {
+    color: var(--rebirth-link-secondary);
+    background-color: var(--rebirth-surface);
+}
+
+.G200 {
+    color: var(--rebirth-link-secondary);
+    background-color: var(--rebirth-surface-inverse);
+}
+
+.transparent {
+    color: var(--rebirth-link-inverse);
+}
+
+/***************************************************/
